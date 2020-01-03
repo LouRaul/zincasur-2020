@@ -1,7 +1,12 @@
-.logoz{
-    margin-top: -20px;
+.logoz {
+  margin-top: -20px;
 }
 
-.trabajos{
-    padding-bottom: 30px;
+.trabajos {
+  padding-bottom: 30px;
+}
+
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
 }

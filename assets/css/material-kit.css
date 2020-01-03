@@ -6207,14 +6207,14 @@ button.bg-success:focus {
 }
 
 .bg-info {
-  background-color: #00bcd4 !important;
+  background-color: #045299!important;
 }
 
 a.bg-info:hover,
 a.bg-info:focus,
 button.bg-info:hover,
 button.bg-info:focus {
-  background-color: #008fa1 !important;
+  background-color: #0361b9!important;
 }
 
 .bg-warning {
@@ -8894,23 +8894,23 @@ button:focus {
 
 .btn.btn-primary {
   color: #fff;
-  background-color: #9c27b0;
-  border-color: #9c27b0;
-  box-shadow: 0 2px 2px 0 rgba(156, 39, 176, 0.14), 0 3px 1px -2px rgba(156, 39, 176, 0.2), 0 1px 5px 0 rgba(156, 39, 176, 0.12);
+  background-color: #045299;
+  border-color: #045299;
+  box-shadow: 0 2px 2px 0 rgba(39, 48, 176, 0.14), 0 3px 1px -2px rgba(39, 60, 176, 0.2), 0 1px 5px 0 rgba(39, 41, 176, 0.12);
 }
 
 .btn.btn-primary:hover {
   color: #fff;
-  background-color: #9124a3;
-  border-color: #701c7e;
+  background-color: #045299;
+  border-color: #045299;
 }
 
 .btn.btn-primary:focus,
 .btn.btn-primary.focus,
 .btn.btn-primary:hover {
   color: #fff;
-  background-color: #9124a3;
-  border-color: #701c7e;
+  background-color: #045299;
+  border-color: #045299;
 }
 
 .btn.btn-primary:active,
@@ -8918,9 +8918,9 @@ button:focus {
 .open>.btn.btn-primary.dropdown-toggle,
 .show>.btn.btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #9124a3;
-  border-color: #701c7e;
-  box-shadow: 0 2px 2px 0 rgba(156, 39, 176, 0.14), 0 3px 1px -2px rgba(156, 39, 176, 0.2), 0 1px 5px 0 rgba(156, 39, 176, 0.12);
+  background-color: #045299;
+  border-color: #045299;
+  box-shadow: 0 2px 2px 0 rgba(39, 71, 176, 0.14), 0 3px 1px -2px rgba(39, 60, 176, 0.2), 0 1px 5px 0 rgba(41, 39, 176, 0.12);
 }
 
 .btn.btn-primary:active:hover,
@@ -8936,8 +8936,8 @@ button:focus {
 .show>.btn.btn-primary.dropdown-toggle:focus,
 .show>.btn.btn-primary.dropdown-toggle.focus {
   color: #fff;
-  background-color: #9124a3;
-  border-color: #3f1048;
+  background-color: #045299;
+  border-color: #045299;
 }
 
 .open>.btn.btn-primary.dropdown-toggle.bmd-btn-icon {
@@ -8966,7 +8966,7 @@ button:focus {
 .btn.btn-primary:focus,
 .btn.btn-primary:active,
 .btn.btn-primary:hover {
-  box-shadow: 0 14px 26px -12px rgba(156, 39, 176, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(156, 39, 176, 0.2);
+  box-shadow: 0 14px 26px -12px rgba(47, 49, 148, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(40, 16, 175, 0.2);
 }
 
 .btn.btn-primary.btn-link {
@@ -14117,7 +14117,7 @@ textarea {
 
 .navbar.bg-info {
   color: #fff;
-  background-color: #00bcd4 !important;
+  background-color: #045299!important;
   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(0, 188, 212, 0.46);
 }
 
@@ -14647,7 +14647,7 @@ textarea {
 }
 
 .icon.icon-primary {
-  color: #9c27b0;
+  color: #045299;
 }
 
 .icon.icon-info {
@@ -16072,7 +16072,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 }
 
 .page-header {
-  height: 100vh;
+  height: 80vh;
   background-position: center center;
   background-size: cover;
   margin: 0;
@@ -16407,7 +16407,7 @@ footer .pull-center {
 .card.bg-info,
 .card.card-rotate.bg-info .front,
 .card.card-rotate.bg-info .back {
-  background: linear-gradient(60deg, #26c6da, #0097a7);
+  background-color: #0740aa;
 }
 
 .card .card-header-success,
