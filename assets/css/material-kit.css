@@ -10939,18 +10939,18 @@ legend {
 }
 
 a {
-  color: #9c27b0;
+  color: #045299;
 }
 
 a:hover,
 a:focus {
-  color: #89229b;
+  color: #045299;
   text-decoration: none;
 }
 
 a.text-info:hover,
 a.text-info:focus {
-  color: #00a5bb;
+  color: #045d99;
 }
 
 a .material-icons {
@@ -14236,7 +14236,7 @@ textarea {
 }
 
 .badge.badge-primary {
-  background-color: #9c27b0;
+  background-color: #273cb0;
 }
 
 .badge.badge-info {

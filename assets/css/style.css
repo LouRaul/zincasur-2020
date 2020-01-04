@@ -10,3 +10,13 @@
   display: flex;
   flex: 1 1 auto;
 }
+
+.tratamiento {
+  width: 40%;
+}
+
+.btn-border {
+  color: #045299;
+  background-color: rgba(4, 82, 153, 0);
+  border: 1px solid #045299;
+}

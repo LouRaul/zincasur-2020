@@ -51,6 +51,17 @@
   </head>
 
   <body class="landing-page sidebar-collapse">
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId            : '2516248668614655',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v5.0'
+        });
+      };
+    </script>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
     <nav
       class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg"
       color-on-scroll="100"
@@ -58,7 +69,7 @@
     >
       <div class="container">
         <div class="navbar-translate">
-          <a class="navbar-brand" href="https://zincasur.com.ar">
+          <a data-aos="fade-down" data-aos-duration="500" data-aos-anchor="#trigger-logo" data-aos-easing="ease-in-sine" class="navbar-brand" href="https://zincasur.com.ar">
             <img
               class="img-fluid logoz"
               src="assets/img/logo-reducido.svg"
@@ -101,15 +112,6 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="#instalaciones"
-                
-              >
-                Instalaciones
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
                 href="#tratamientos"
                 
               >
@@ -118,7 +120,17 @@
             </li>
             <li class="nav-item">
               <a
-                class="btn btn-primary btn-round btn-group-sm"
+                class="nav-link"
+                href="#instalaciones"
+                
+              >
+                Instalaciones
+              </a>
+            </li>
+          
+            <li class="nav-item">
+              <a
+                class="btn btn-primary"
                 href="#contacto"
               
               >
@@ -150,7 +162,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <img src="assets/img/zincasur.svg" alt="logo zincasur" />
+            <img class="img-fluid"src="assets/img/zincasur.svg" alt="logo zincasur" />
           </div>
         </div>
       </div>
@@ -171,9 +183,9 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div id="trigger-logo" class="container">
           <div class="features">
-            <div class="row">
+            <div class="row text-center">
               <div class="col-md-4">
                 <div class="info">
                   <div class="icon icon-primary">
@@ -323,22 +335,28 @@
             </a>
           </div>
         </div>
-        <div id="tratamientos" class="container-fluid bg-primary">
+        <div id="tratamientos" class="section container">
             <h2 class="title text-center">Tratamientos</h2>
-            <div class="team">
-              <div class="row">
-                <div class="col-md-6>
-                  <h3>Tratamiento anticorrosivo de superficies metálicas</h3>
+              <div class="row px-3">
+                <div class="col-md-5 pb-3">
+                  <h4 class="title">Tratamiento anticorrosivo de superficies metálicas</h4>
+                  <p>Garantizamos la calidad de nuestro proceso productivo mediante tratamientos a las piezas previos a su acabado final.</p>
+                  <ul>
+                    <li>Deshidrogenado</li>
+                    <li>Decapado</li>
+                    <li>Zincado Electrolitico</li>
+                    <span class="badge badge-primary mx-1">Azul</span><span class="badge badge-primary mx-1">Dorado</span><span class="badge badge-primary mx-1">Verde</span><span class="badge badge-primary mx-1">Negro</span><span class="badge badge-primary mx-1">Alta Resistencia</span><span class="badge badge-primary mx-1">Pre-pintado</span>
+                  </ul>
                 </div>
-                <div class="col-md-6">
-                  <img class="img-raised img-fluid rounded" src="assets/img/Zincado-azul.jpg" alt="">
-                  <img class="img-raised img-fluid rounded" src="assets/img/Zincado-azul.jpg" alt="">
-                  <img class="img-raised img-fluid rounded" src="assets/img/Zincado-azul.jpg" alt="">
-                  <img class="img-raised img-fluid rounded" src="assets/img/Zincado-azul.jpg" alt="">
+                <div class="col-md-7 text-center">
+                  <img class="img-raised img-fluid rounded tratamiento p-3" src="assets/img/Zincado-azul.jpg" alt="Zincado Zincado-azul">
+                  <img class="img-raised img-fluid rounded tratamiento p-3" src="assets/img/zincado-verde.png" alt="Zincado Verde">
+                  <img class="img-raised img-fluid rounded tratamiento p-3" src="assets/img/Zincado-negro.jpg" alt="Zincado negro">
+                  <img class="img-raised img-fluid rounded tratamiento p-3" src="assets/img/Zincado-Dorado.jpg" alt="Zincado Dorado">
                 </div>
               </div>
             </div>
-          </div>
+    
        <div class="container">
         <div id="instalaciones" class="section text-center">
           <h2 class="title">Instalaciones</h2>
@@ -362,7 +380,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div data-aos="fade-up" class="card">
+                <div  class="card">
                   <img
                     class="card-img-top"
                     src="assets/img/bano-rotativo.jpg"
@@ -399,7 +417,8 @@
           </div>
         </div>
       </div>
-        <div class="section container">
+      <div class="container">
+        <div class="section">
           <div class="row">
             <div class="card bg-info py-4">
               <div class="card-horizontal">
@@ -409,10 +428,11 @@
                     retiro de mercaderia
                 </h4>
               </div>
-              <div class="col-md-6"><img src="assets/img/logistica.svg" alt="Logistica"></div>
+              <div class="col-md-6 text-center my-auto mx-auto"><img src="assets/img/logistica.svg" alt="Logistica"></div>
           </div>
         </div>
       </div>
+    </div>
         </div>
         <div id="contacto" class="section section-contacts">
           <div class="row">
@@ -455,6 +475,17 @@
                   </div>
                 </div>
               </form>
+              <div class="row justify-content-around pt-5">
+                <div class="col-lg-4 align-items-center text-center py-3"><a href="tel:01142999863"><i class="material-icons pr-3">
+                  phone
+                  </i>4299-9863 / 4299-7152</a></div>
+                <div class="col-lg-4 align-items-center text-center py-3"><a href="mailto:info@zincasur.com.ar"><i class="material-icons pr-3">
+                  email
+                  </i>info@zincasur.com.ar</a></div>  
+                <div class="col-lg-4 align-items-center text-center py-3"><a href="https://goo.gl/maps/wPwNAvjeS1aNWyJ37"><i class="material-icons pr-3">
+                  apartment
+                  </i>Sevre 1934, B1852OAN Burzaco</a></div>    
+              </div>
             </div>
           </div>
         </div>
@@ -514,6 +545,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
     <script>
       $(document).on("click", '[data-toggle="lightbox"]', function(event) {
         event.preventDefault()
@@ -522,6 +554,9 @@
     </script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
     </script>
   </body>
 </html>
