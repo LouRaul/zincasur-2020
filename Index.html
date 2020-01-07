@@ -72,6 +72,7 @@
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
       js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
@@ -413,7 +414,7 @@ logged_out_greeting="Hola! ¿Como podemos ayudarte?">
               <h4 class="text-center description">
                 Dejanos tu mensaje y nos pondremos en contacto a la brevedad
               </h4>
-              <form class="contact-form mx-5" id="contact-form" method="post" action="contact.php">
+              <form autocomplete="off" class="contact-form mx-5" id="contact-form" method="post" action="contact.php">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
